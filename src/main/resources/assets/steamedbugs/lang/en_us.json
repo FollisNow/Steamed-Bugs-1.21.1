@@ -1,0 +1,13 @@
+{
+  "itemGroup.steamedbugs": "Example Mod Tab",
+  "block.steamedbugs.example_block": "PLACEHOLDER BLOCK",
+  "item.steamedbugs.placeholder_item": "PLACEHOLDER ITEM",
+
+  "steamedbugs.configuration.title": "Example Mod Configs",
+  "steamedbugs.configuration.section.steamedbugs.common.toml": "Example Mod Configs",
+  "steamedbugs.configuration.section.steamedbugs.common.toml.title": "Example Mod Configs",
+  "steamedbugs.configuration.items": "Item List",
+  "steamedbugs.configuration.logDirtBlock": "Log Dirt Block",
+  "steamedbugs.configuration.magicNumberIntroduction": "Magic Number Text",
+  "steamedbugs.configuration.magicNumber": "Magic Number"
+}

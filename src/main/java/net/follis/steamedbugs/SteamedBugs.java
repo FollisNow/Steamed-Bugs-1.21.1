@@ -1,5 +1,7 @@
 package net.follis.steamedbugs;
 
+import net.follis.steamedbugs.item.ModItems;
+import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -26,6 +28,8 @@ public class SteamedBugs {
 
         NeoForge.EVENT_BUS.register(this);
 
+        ModItems.register(modEventBus);
+
         modEventBus.addListener(this::addCreative);
 
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
@@ -36,7 +40,9 @@ public class SteamedBugs {
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-
+        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.PLACEHOLDER_ITEM);
+        }
     }
 
     @SubscribeEvent
